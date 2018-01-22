@@ -1,0 +1,9 @@
+ body{
+ 	background-color: lavander;
+ }
+
+ h1 {
+      font-weight: normal;
+      font-size: 40px;
+      color: rgba(156, 39, 176, 0.6392156862745098);
+  }
