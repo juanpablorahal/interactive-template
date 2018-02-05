@@ -1,0 +1,42 @@
+body { background-color: #c38fc7;
+	
+}
+
+#squares div {
+	height: 20vw;
+	width: 20vw;
+	background-color: yellow ;
+	margin: 1vw;
+	float: right;
+}
+
+#square{
+	clear: both;
+	position: fixed;
+}
+
+#grad1 div {
+    height: 17vw;
+    width: 17vw;
+    background: linear-gradient(#6cac8a, #c38fc7); /* Standard syntax (must be last) */
+	margin: 1vw;
+	float: right;
+}
+
+#grad2 div {
+    height: 6vw;
+    width: 6vw;
+    background: linear-gradient(#f8795f, #f7b666); /* Standard syntax (must be last) */
+	border-radius: 50%; 
+	margin: 6vw;
+	float: right;
+}
+
+#grad2 {
+	/*margin-top: -100vw; */
+	width: 
+	height: 
+	border: ;
+	clear: both;
+	position: fixed;
+}

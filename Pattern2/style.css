@@ -1,0 +1,46 @@
+body 
+{
+	background-color: white;
+}
+
+#triangle-bottomleft div {
+	width: 0;
+	height: 0;
+	border-bottom: 8vw solid blue;
+	border-right: 8vw solid transparent;
+	float: right;
+	
+}
+#parallelogram div {
+	width: 8vw;
+	height: 16vw;
+	-webkit-transform: skew(10deg);
+	   -moz-transform: skew(20deg);
+	     -o-transform: skew(20deg);
+	background: blue;
+	float: center;
+	margin: 0;
+
+
+}
+
+#circles div {
+	height: 8vw;
+	width: 8vw;
+	background-color: white;
+	border-radius: 50%; 
+	margin: 1vw;
+	float: left;
+	margin: 4vw;
+
+
+}
+
+#circles {
+	/*margin-top: -100vw; */
+	width: 
+	height: 
+	border: ;
+	clear: both;
+	position: fixed;
+}

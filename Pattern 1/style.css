@@ -1,0 +1,58 @@
+body {
+	background-color: cf3921;
+}
+
+#squares div{
+	height: 5vw;
+	width: 1vw;
+	background-color: ffc001;
+	margin: 1vw;
+	float: right;
+}
+
+#squares .blue {
+	background-color: 006a77;
+}
+
+#squares #yellow {
+	background-color: gold;
+}
+
+#circles div {
+	height: 5vw;
+	width: 5vw;
+	background-color: ffb194;
+	border-radius: 50%; 
+	margin: 1vw;
+	float: right;
+
+}
+
+#rectangle div {
+	height: 5vw;
+	width: 10vw;
+	background-color: 006a77;
+	margin: 2vw;
+	float: right;
+
+}
+
+
+#circles {
+	/*margin-top: -100vw; */
+	width: 
+	height: 
+	border: ;
+	clear: both;
+	position: fixed;
+}
+
+#square{
+	clear: both;
+	position: fixed;
+}
+#rectangle {
+	clear: both;
+	position: fixed;
+}
+
