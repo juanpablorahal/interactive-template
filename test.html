@@ -1,0 +1,233 @@
+<html>
+<head>
+	<title>MORAL QUESTIONS?</title>
+	  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	  <script>
+		  $( function() {
+		    $( ".draggable" ).draggable();
+		  } );
+
+		  $(document).ready(function(){
+var counter = -1;
+		  	var poem = ["IS HE A HE", 
+							"'IS HE A HE' A MORAL QUESTION?", 
+							"WHERE IS HE?",
+							"HOW IS HE?", 
+							"WHY IS HE?",
+							"IS 'WHY IS HE?' AN UNANSWEARABLE QUESTION?",
+							"HOW IS HE A HE OR HE A SHE ACCORDING TO A PATTERN?", 
+							"HOW IS THE PRINCIPLE OF GENDER A PATTERN?",
+							"HOW IS GENDER A MATTER OF HABIT?", 
+							"HOW IS GENDER A MATTER OF LOCATION?", 
+							"IS A PATER A MATTER OF LOCATION?",
+							"IS LOCATION A PART OF A MATTER?",
+							"HOW DOES HE RETURN AND WHERE TO?", 
+							"HOW DOES INFINITY CREATE A CONTEXT?",
+							"HOW IS CONTEXT A GIFT?",
+							"HOW DO GIFTS OBLIGE?"
+			  				];
+
+			//var counter = 0;
+
+
+		  	// mouse position option
+		  	function mouseMover(x){
+
+			  	$( ".box" ).on( "mousemove", function( event ) {
+					// console.log( "pageX: " + event.pageX + ", pageY: " + event.pageY );
+
+				  	//box size
+				  	// var boxHeight = $(".box").outerHeight();
+				  	// var boxWidth = $(".box").outerWidth();
+
+				  	var boxHeight = 50;
+				  	var boxWidth = 50;
+
+				  	// box position
+				  	var boxTop = $(".box").offset().top;
+				  	var boxLeft = $(".box").offset().left;
+
+				  	//console.log(boxHeight + ' ' + boxWidth + ' ' + boxLeft + ' ' + boxTop);
+
+				  	// $(".text").css({
+				  	// 	top: event.pageY + "px",
+				  	// 	left: event.pageX + "px"
+				  	// });
+
+				  	//text position
+				  	var textTop = $(".text").offset().top;
+				  	var textLeft = $(".text").offset().left;
+
+				  	// random-ish positions to boot text out of frame
+				  	var topPos = [50, 100, (boxTop + boxHeight + 50)];
+				  	var leftPos = [10, 30, (boxLeft + boxWidth + 50)];
+
+				  	var rando1 = Math.floor(Math.random() * Math.floor(10));
+				  	var rando2 = Math.floor(Math.random() * Math.floor(.5));
+console.log("textTop " + textTop);
+console.log("topPos " + topPos);
+				  	// tentative if statement
+				  	if (textTop > boxTop && textLeft > boxWidth ) {
+
+				  		console.log("textTop is greater than boxTop and boxTop + boxHeight");
+counter++;
+				  		$(".text").text(poem[counter]);
+				  	
+				  		// $(".text").text(poem[2]);
+				  		// $(".text").text(poem[x]);
+
+				  		$(".text").css({
+				  			top: topPos[rando1],
+				  			left: leftPos[rando2]
+				  		})
+
+				  		console.log("counter is " + counter);
+				  		console.log(poem[counter]);
+
+				  	} else {
+				  		console.log("nope");
+				  	}
+
+				  });
+
+			  	//$(document).trigger('mouseStuffComplete');
+		  	}
+
+		  	
+
+		  	// function counting(num){
+		  	// 	num++;
+		  	// 	counter = num;
+		  	// 	// return counter;
+		  	// }
+
+		  	// mouseMover(function(){
+		  	// 	counter +1;
+		  	// });
+
+		  	mouseMover(counter);
+		  	// mouseMover(counting());
+		  	console.log(counter);
+		  	
+		  	$(document).bind('mouseStuffComplete', mouseMover);
+
+		  });
+	  </script>
+	<style>
+	@font-face {
+    font-family: ScotchModern-Regular;
+    src: url("ScotchModern-Regular.otf") format("opentype");
+}
+
+
+		.box {
+			position: absolute;
+			top: 25%;
+			left: 25%;
+			height: 50%;
+			width: 50%;
+			border: 5px solid #7600ff;
+			margin: auto;
+			display:block;
+		}
+
+		.text {
+			position: absolute;
+			line-height: .8em;
+			/*background-color: red;*/
+			/*width: 50%;*/
+			top: 0;
+			left: 0;
+			font-size: 10em;
+			  display:inline-block;
+    -webkit-transform:scale(.5,1); /* Safari and Chrome */
+    -moz-transform:scale(.5,1); /* Firefox */
+    -ms-transform:scale(.5,1); /* IE 9 */
+    -o-transform:scale(.5,1); /* Opera */
+    transform:scale(.5,1); /* W3C */
+
+		}
+
+		body, html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+	  font-family: 'ScotchModern-Regular', serif;
+
+    /* The image used */
+    background-image: url("background-copy.jpg");
+    /*background-color: red;*/
+
+    /* Full height */
+    height: 100%; 
+    width: 100%;
+
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.topright{
+	position: absolute;
+	right: 150px;
+	top: 90px;
+	font-size: 1.8em;
+	color: black;
+}
+.bottmright{
+	position: absolute;
+	transform: rotate(-90deg);
+
+	right: 40px;
+	bottom: 260px;
+	font-size: 2.5em;
+	color: #7600ff;
+}
+.bottm{
+	position: absolute;
+	/*transform: rotate(-90deg);*/
+
+	right: 300px;
+	bottom: 100px;
+	font-size: 2.5em;
+	color: #7600ff;
+}
+.top{
+	position: absolute;
+	transform: rotate(180deg);
+
+	left: 300px;
+	top: 100px;
+	font-size: 2.5em;
+	color: #7600ff;
+}
+.topleft{
+	position: absolute;
+	transform: rotate(90deg);
+
+	left: 300px;
+	top: 140px;
+	font-size: 2.5em;
+	color: #7600ff;
+}
+
+	
+	</style>
+</head>
+<body>
+	<div class="box"></div>
+	<div class="text draggable">IS HE A HE?</div>
+	<div class="topright"> drag the question into the box?</div>
+	<div class="bottmright">from the book Volition?</div>
+	<div class="bottm"> by Gregg  Bordowitz, </div>
+	<div class="top">	a poem</div>
+	<div class="topleft">by</div>
+
+
+
+</body>
+</html>
