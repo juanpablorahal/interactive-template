@@ -1,0 +1,250 @@
+ body{
+ 	background-color: white;
+}
+
+ h1 {
+    font-family: 'Apercu'; 
+    font-weight: 400;
+    font-size: 60px;
+    width: 100%;
+    color: blue;
+    text-decoration: unset;
+    position: fixed;
+    text-align: center;
+    top: 10%;
+    margin: 0px;
+    margin-top: 0px;
+    margin-right: 0%; 
+    letter-spacing: 10px;
+  }
+
+h2 {
+
+  font-family: 'Foundry Plek';
+  font-weight: 800;
+  font-size: 60px;
+  width: 100%;
+  color: blue;
+  text-decoration: unset;
+  position: fixed;
+  bottom: 10%;
+  margin: 0px;
+  text-align: center;
+  letter-spacing: 5px;
+
+}
+
+h3 {
+  font-family: 'Apercu'; 
+    font-weight: 400;
+    font-size: 20px;
+    color: blue;
+    text-decoration: unset;
+    text-align: left;
+    
+    left: 0px;
+    margin: 0px;
+    margin-top: 1000px;
+    margin-right: 50%; 
+}
+
+h4 {
+  font-family: 'Apercu'; 
+    font-weight: 400;
+    font-size: 20px;
+    color: blue;
+    text-decoration: unset;
+    text-align: left;
+    
+    left: 0px;
+    margin: 0px;
+    margin-left: 9%;
+    margin-right: 50%;
+    margin-top: 83%; 
+}
+
+h5 {
+  font-family: 'Apercu'; 
+    font-weight: 400;
+    font-size: 20px;
+    color: blue;
+    text-decoration: unset;
+    text-align: left;
+    left: 0px;
+    margin: 0%;
+    margin-left: 35%;
+    margin-right: 50%;
+    margin-top: 83%; 
+}
+
+h6 {
+  font-family: 'Apercu'; 
+    font-weight: 400;
+    font-size: 20px;
+    color: blue;
+    text-decoration: unset;
+    text-align: left;
+    
+    left: 0px;
+    margin: 0px;
+    margin-left: 5%;
+    margin-right: 50%;
+    margin-top: 18.85%; 
+}
+
+h7 {
+  font-family:  monospace; 
+    font-weight: 400;
+    font-size: 20px;
+    color: blue;
+    text-decoration: unset;
+    text-align: left;
+    
+    left: 0px;
+    margin: 0px;
+    margin-left: 18.15%;
+    margin-right: 50%;
+    margin-top: 22.1%; 
+}
+
+h8 {
+  font-family: monospace; 
+    font-weight: 400;
+    font-size: 20px;
+    color: blue;
+    text-decoration: unset;
+    text-align: left;
+    
+    left: 0px;
+    margin: 0px;
+    margin-left: 9.15%;
+    margin-right: 50%;
+    margin-top: 22.1%; 
+}
+
+h9 {
+  font-family: monospace; 
+    font-weight: 400;
+    font-size: 20px;
+    color: blue;
+    text-decoration: line-through;
+    text-align: left;
+    
+    left: 0px;
+    margin: 0px;
+    margin-left: 9.15%;
+    margin-right: 50%;
+    margin-top: 22.1%; 
+}
+h10 {
+    font-family: 'Apercu'; 
+    font-weight: 400;
+    font-size: 60px;
+    width: 100%;
+    color: red;
+    text-decoration: unset;
+    position: fixed;
+    text-align: center;
+    top: 10%;
+    margin: 0px;
+    margin-top: 0px;
+    margin-right: 0%; 
+    letter-spacing: 10px;
+  }
+
+h11 {
+
+  font-family: 'Foundry Plek';
+  font-weight: 800;
+  font-size: 60px;
+  width: 100%;
+  color: red;
+  text-decoration: unset;
+  position: fixed;
+  bottom: 10%;
+  margin: 0px;
+  text-align: center;
+  letter-spacing: 5px;
+
+}
+
+h12 {
+  font-family: 'Apercu'; 
+    font-weight: 400;
+    font-size: 20px;
+    color: red;
+    text-decoration: unset;
+    text-align: left;
+    left: 0px;
+    margin: 0px;
+    margin-left: 25.15%;
+    margin-right: 50%;
+    margin-top: 52.1%; 
+}
+
+
+#squares div{
+  height: 5vw;
+  width: 1vw;
+  background-color: ffc001;
+  margin: 1vw;
+  float: right;
+
+}
+
+* {
+    box-sizing: border-box;
+
+
+}
+#rectangle div {
+  height: 50%;
+  width: 18%;
+  border: blue;
+  border-style: solid;
+  border-width: 10px;
+  margin: 2vw;
+  color: blue;
+  position: fixed;
+  bottom: 25%;
+  right: 40.5%;
+  margin: 0px;
+  float: center;
+
+
+}
+
+#rectangle2 div {
+  height: 50%;
+  width: 18%;
+  border: red;
+  border-style: solid;
+  border-width: 10px;
+  margin: 2vw;
+  color: red;
+  position: fixed;
+  bottom: 25%;
+  right: 40.5%;
+  margin: 0px;
+  float: center;
+
+
+}
+
+
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    height: 100%;
+    padding: 10px;
+   /* Should be removed. Only for demonstration */
+}
+
+.row:after {
+    content: "";
+    height: 60vh;
+    display: table;
+    clear: both;
+}
